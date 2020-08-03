@@ -1,0 +1,27 @@
+@import "../vendor/modularscale/modularscale";
+
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  src: url("./../assets/font/Epilogue/Epilogue[wght].ttf"),
+       url("./../assets/font/Epilogue/Epilogue[wght].woff2");
+  }
+
+@font-face {
+  font-family: "Epilogue";
+  font-style: italic;
+  src: url("./../assets/font/Epilogue/Epilogue-Italic[wght].ttf"),
+        url("./../assets/font/Epilogue/Epilogue-Italic[wght].woff2");
+  }
+
+h1,
+h2,
+h3,
+h4,
+p,
+a, 
+span,
+ul,
+li {
+  font-family: $font-text;
+}
