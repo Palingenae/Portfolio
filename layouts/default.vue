@@ -1,5 +1,9 @@
 <template>
-  <Nuxt />
+  <div>
+    <NavigationSite />
+    <Nuxt />
+    <!-- footer ici -->
+  </div>
 </template>
 
 <style lang="scss">
@@ -15,9 +19,11 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 body {
   background-color: $color-grey-1;
 }
+
 *,
 *::before,
 *::after {
