@@ -40,7 +40,7 @@
   }
   &__introduction {
     font-size: ms(6);
-    font-weight: 650;
+    font-weight: 700;
     letter-spacing: -0.1rem;
     color: $color-main;
     margin-bottom: $spacing-medium;
