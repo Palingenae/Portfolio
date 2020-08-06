@@ -1,18 +1,16 @@
-@import "../vendor/modularscale/modularscale";
-
 @font-face {
   font-family: "Epilogue";
   font-style: normal;
   src: url("./../assets/font/Epilogue/Epilogue[wght].ttf"),
        url("./../assets/font/Epilogue/Epilogue[wght].woff2");
-  }
+}
 
 @font-face {
   font-family: "Epilogue";
   font-style: italic;
   src: url("./../assets/font/Epilogue/Epilogue-Italic[wght].ttf"),
-        url("./../assets/font/Epilogue/Epilogue-Italic[wght].woff2");
-  }
+       url("./../assets/font/Epilogue/Epilogue-Italic[wght].woff2");
+}
 
 h1,
 h2,
@@ -24,4 +22,44 @@ span,
 ul,
 li {
   font-family: $font-text;
+}
+
+h1 {
+  font-size: ms(7);
+  line-height: $spacing-display-line-height;
+}
+
+h2 {
+  font-size: ms(6);
+  line-height: $spacing-display-line-height;
+}
+
+// h3 {
+//   font-size: ms(5);
+// }
+
+// h4 {
+//   font-size: ms(4);
+// }
+
+p {
+  .jumbo {
+    font-size: ms(8);
+  }
+  .large {
+    font-size: ms(3);
+  }
+  .paragraph {
+    font-size: ms(1);
+  }
+}
+
+.ui {
+  font-weight: 500;
+  font-size: ms(1);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }

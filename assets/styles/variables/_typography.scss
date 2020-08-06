@@ -1,1 +1,8 @@
+@import "../vendor/modularscale/modularscale";
+
 $font-text: "Epilogue";
+
+$modularscale: (
+  ratio: 1.25,
+  base: 1rem
+);
