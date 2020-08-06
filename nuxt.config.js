@@ -46,7 +46,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxt/components'
   ],
   /*
    ** Nuxt.js modules
@@ -68,8 +69,12 @@ export default {
     scss: [
       './assets/styles/variables/*.scss',
       './assets/styles/modules/*.scss',
+      './assets/styles/vendor/scss/fontawesome.scss'
     ],
   },
+  components: [
+    '~/components'
+  ],
   axios: {},
   /*
    ** Content module configuration
