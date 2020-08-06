@@ -34,10 +34,17 @@ export default {
           href: 'https://www.github.com/palingenae/',
           linkClass: 'link_block link__branded--github',
           icon: 'fab fa-github',
-          label: 'Instagram',
+          label: 'Github',
         },
       ],
     }
   },
 }
 </script>
+
+<style lang="scss">
+.link_block {
+  @extend .link;
+  margin: $spacing-small $spacing-medium;
+}
+</style>
