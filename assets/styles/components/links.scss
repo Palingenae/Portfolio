@@ -3,7 +3,13 @@
     @extend .ui;
     text-decoration: none;
     color: $color-grey-8;
+    padding: 0.3rem;
+    border-bottom: 2px solid transparent;
     margin: $spacing-small $spacing-medium;
+    transition: border-bottom ease-in 100ms;
+    &:hover {
+      border-bottom: 2px solid $color-ambiance;
+    }
     &:first-of-type {
       margin-left: 0;
     }
