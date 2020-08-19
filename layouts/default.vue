@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavigationSite />
     <Nuxt />
     <!-- footer ici -->
   </div>
@@ -10,7 +9,7 @@
 html {
   font: {
     family: $font-text, -apple-system, BlinkMacSystemFont, sans-serif;
-    size: 20px;
+    size: 1em;
   }
   color: $color-grey-9;
   -ms-text-size-adjust: 100%;
