@@ -13,25 +13,34 @@
       <!-- Liens vers lers réseaux sociaux-->
       <SocialProfiles />
       <!-- Vers le bas -->
-      <div class="hero__CTA--scroll">
+      <!-- <div class="hero__CTA--scroll">
+        <font-awesome-icon icon="arrow-down" />
         Vers le bas
-      </div>
+      </div> -->
     </section>
+    <!-- <section class="projects">
+      <h2>Mes projets</h2>
+    </section> -->
   </main>
 </template>
 
 <style lang="scss">
 .main {
-  display: grid;
-  grid-template-columns: $spacing-medium auto $spacing-medium;
-  padding: $spacing-medium $spacing-xlarge;
+  // display: grid;
+  // grid-template-columns: $spacing-medium auto $spacing-medium;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: $spacing-xlarge;
+  height: 100vh;
 }
 
 .hero {
-  // display: flex;
-  // flex-flow: column nowrap;
-  grid-column-start: 2;
-  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  // grid-column-start: 2;
+  // height: 100vh;
+  max-width: 64rem;
   &__greeting {
     font-size: ms(8);
     font-weight: 700;
@@ -50,10 +59,15 @@
     font-size: ms(6);
     font-weight: 160;
     margin-bottom: $spacing-large;
+    line-height: $spacing-display-line-height;
   }
   &__CTA--scroll {
-    @extend .ui;
+    // @extend .ui;
     margin-top: $spacing-large;
   }
+}
+
+.projects {
+  grid-column-start: 2;
 }
 </style>
