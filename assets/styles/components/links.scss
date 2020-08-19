@@ -1,0 +1,11 @@
+.link {
+  &_block {
+    @extend .ui;
+    text-decoration: none;
+    color: $color-grey-8;
+    margin: $spacing-small $spacing-medium;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
