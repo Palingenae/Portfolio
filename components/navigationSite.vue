@@ -17,7 +17,7 @@
     padding: $spacing-medium $spacing-xlarge;
   }
   &__link {
-    font-weight: 500;
+    @extend .ui;
     padding: $spacing-small $spacing-medium;
   }
 }
