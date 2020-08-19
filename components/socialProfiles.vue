@@ -1,14 +1,15 @@
 <template>
-  <section class="links--socialmedia">
-    <a
-      v-for="profile in profiles"
-      :key="profile.label"
-      :href="profile.href"
-      target="_blank"
-      :class="profile.linkClass"
-    >
-      <i :class="profile.icon" />
-      <span class="link__label">{{ profile.label }}</span>
+  <section class="links__socialmedia">
+    <a href="" target="_blank" class="link_block">
+      <span class="link__label">Twitter</span>
+    </a>
+    <a href="" target="_blank" class="link_block">
+      <fa :icon="['fab', 'instagram']" />
+      <span class="link__label">Instagram</span>
+    </a>
+    <a href="" target="_blank" class="link_block">
+      <font-awesome-icon :icon="['fab', 'FaIconGithub']" />
+      <span class="link__label">Github</span>
     </a>
   </section>
 </template>
@@ -19,21 +20,21 @@ export default {
     return {
       profiles: [
         {
-          href: 'https://twitter.com/palingenaes',
+          href: 'https://twitter.com/palingenae',
           linkClass: 'link_block link__branded--twitter',
-          icon: 'fab fa-twitter',
+          icon: 'twitter',
           label: 'Twitter',
         },
         {
           href: 'https://www.instagram.com/palingenae/',
           linkClass: 'link_block link__branded--instagram',
-          icon: 'fab fa-instagram',
+          icon: 'instagram',
           label: 'Instagram',
         },
         {
           href: 'https://www.github.com/palingenae/',
           linkClass: 'link_block link__branded--github',
-          icon: 'fab fa-github',
+          icon: 'github',
           label: 'Github',
         },
       ],
@@ -41,10 +42,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.link_block {
-  @extend .link;
-  margin: $spacing-small $spacing-medium;
-}
-</style>

@@ -47,6 +47,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
+    '@nuxtjs/fontawesome',
     '@nuxt/components'
   ],
   /*
@@ -61,20 +62,33 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content'
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
   styleResources: {
     scss: [
       './assets/styles/variables/*.scss',
       './assets/styles/modules/*.scss',
+      './assets/styles/components/*.scss',
       './assets/styles/vendor/scss/fontawesome.scss'
     ],
   },
   components: [
     '~/components'
   ],
+  fontawesome: {
+    component: 'FaIcon',
+    suffix: false,
+    solid: [
+      'arrowDown'
+    ],
+    brands: [
+      'github',
+      'instagram',
+      'twitter'
+    ]
+  },
+  /*
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
   axios: {},
   /*
    ** Content module configuration
