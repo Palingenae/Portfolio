@@ -1,18 +1,40 @@
 <template>
   <section class="links__socialmedia">
-    <a href="" target="_blank" class="link_block">
-      <span class="link__label">Twitter</span>
+    <a href="https://twitter.com/palingenae" target="_blank" class="link_block">
+      Twitter
     </a>
-    <a href="" target="_blank" class="link_block">
-      <fa :icon="['fab', 'instagram']" />
-      <span class="link__label">Instagram</span>
+    <a
+      href="https://www.instagram.com/palingenae/"
+      target="_blank"
+      class="link_block"
+    >
+      Instagram
     </a>
-    <a href="" target="_blank" class="link_block">
-      <font-awesome-icon :icon="['fab', 'FaIconGithub']" />
-      <span class="link__label">Github</span>
+    <a
+      href="https://www.github.com/palingenae/"
+      target="_blank"
+      class="link_block"
+    >
+      Github
     </a>
   </section>
 </template>
+
+<style lang="scss">
+.links__socialmedia {
+  display: flex;
+  flex-flow: row nowrap;
+  @media screen and (max-width: 640px) {
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .links__socialmedia:first-child {
+      margin: $spacing-small $spacing-medium;
+    }
+  }
+}
+</style>
 
 <script>
 export default {
@@ -21,19 +43,16 @@ export default {
       profiles: [
         {
           href: 'https://twitter.com/palingenae',
-          linkClass: 'link_block link__branded--twitter',
           icon: 'twitter',
           label: 'Twitter',
         },
         {
           href: 'https://www.instagram.com/palingenae/',
-          linkClass: 'link_block link__branded--instagram',
           icon: 'instagram',
           label: 'Instagram',
         },
         {
           href: 'https://www.github.com/palingenae/',
-          linkClass: 'link_block link__branded--github',
           icon: 'github',
           label: 'Github',
         },

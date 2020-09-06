@@ -33,6 +33,14 @@
   align-items: center;
   padding: $spacing-xlarge;
   height: 100vh;
+  @media screen and (max-width: 1024px) {
+    padding: $spacing-large;
+  }
+  @media screen and (max-width: 640px) {
+    padding: $spacing-medium;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .hero {
@@ -42,13 +50,13 @@
   // height: 100vh;
   max-width: 64rem;
   &__greeting {
-    font-size: ms(8);
+    @extend .jumbo;
     font-weight: 700;
     letter-spacing: -0.3rem;
     margin-bottom: $spacing-medium;
   }
   &__introduction {
-    font-size: ms(6);
+    @extend h2;
     font-weight: 700;
     letter-spacing: -0.1rem;
     color: $color-main;
@@ -56,7 +64,7 @@
     line-height: $spacing-display-line-height;
   }
   &__description {
-    font-size: ms(6);
+    @extend h2;
     font-weight: 160;
     margin-bottom: $spacing-large;
     line-height: $spacing-display-line-height;

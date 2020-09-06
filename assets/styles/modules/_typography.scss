@@ -15,11 +15,23 @@
 h1 {
   font-size: ms(7);
   line-height: $spacing-display-line-height;
+  @media screen and (max-width: 1024px) {
+    font-size: ms(6);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(5);
+  }
 }
 
 h2 {
   font-size: ms(6);
   line-height: $spacing-display-line-height;
+  @media screen and (max-width: 1024px) {
+    font-size: ms(5);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(4);
+  }
 }
 
 // h3 {
@@ -35,19 +47,43 @@ h2 {
 .jumbo {
   font-size: ms(8);
   line-height: $spacing-display-line-height;
+  @media screen and (max-width: 1024px) {
+    font-size: ms(7);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(6);
+  }
 }
 
 .large {
   font-size: ms(3);
   line-height: $spacing-display-line-height;
+  @media screen and (max-width: 1024px) {
+    font-size: ms(2);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(1);
+  }
 }
 
 .paragraph {
   font-size: ms(2);
+  @media screen and (max-width: 1024px) {
+    font-size: ms(1);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(0);
+  }
 }
 
 
 .ui {
   font-weight: 450;
-  font-size: ms(1);
+  font-size: ms(2);
+  @media screen and (max-width: 1024px) {
+    font-size: ms(1);
+  }
+  @media screen and (max-width: 640px) {
+    font-size: ms(1);
+  }
 }
